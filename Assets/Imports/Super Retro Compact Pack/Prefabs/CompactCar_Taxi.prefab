@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 7020707275852698673}
   m_Layer: 0
   m_Name: Wheel
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300008, guid: f06d78ad13c1ea94b8809c77651a45da, type: 3}
 --- !u!95 &7020707275852698673
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 1065638201662678904}
   m_Layer: 0
   m_Name: Wheel.002
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +518,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: f06d78ad13c1ea94b8809c77651a45da, type: 3}
 --- !u!95 &1065638201662678904
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 3229708694290832675}
   m_Layer: 0
   m_Name: Wheel.001
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -646,7 +646,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: f06d78ad13c1ea94b8809c77651a45da, type: 3}
 --- !u!95 &3229708694290832675
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 6343325052269285793}
   m_Layer: 0
   m_Name: Wheel.003
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +774,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: f06d78ad13c1ea94b8809c77651a45da, type: 3}
 --- !u!95 &6343325052269285793
