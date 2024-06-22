@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6697678992070587940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870862539325954978}
+  - component: {fileID: 6589567411655348857}
+  m_Layer: 0
+  m_Name: CarSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &870862539325954978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697678992070587940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.5, y: 0, z: 256.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6589567411655348857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697678992070587940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6645185d777a24a816bc933eb8e321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cars:
+  - carPrefab: {fileID: 963847260374479469, guid: fb397a507ec6bea4699cc33654426f29, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 2684368423731851025, guid: 24075fd542ead56449bccfc9219b69ec, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 1839242701732781255, guid: efb064d9645e5c54e88af270294bef76, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 2995164600301602506, guid: e4657405198e09b4382949bd2493bd2b, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 5933389281880712221, guid: 5bcf42d65da7f114ab0a01d1eefd99ee, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 4038702029858004057, guid: 257511af356a77849a4391279ffc13b8, type: 3}
+    spawnProbability: 5
+  - carPrefab: {fileID: 833942799894896069, guid: 9b95fce458fc2c044890430885a32d8f, type: 3}
+    spawnProbability: 5
+  - carPrefab: {fileID: 37053927502982119, guid: 7a1dd3a123817e648b1fb8b2db8b1292, type: 3}
+    spawnProbability: 5
+  - carPrefab: {fileID: 464864866348986875, guid: e6cc0ed455f69054f953b3f03a04a5e4, type: 3}
+    spawnProbability: 1
+  - carPrefab: {fileID: 9203572333345304083, guid: bd149a05945aa5a47838bffd087d8205, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 1050485123528347317, guid: 29c487e88858e1548ac01bcf722c297b, type: 3}
+    spawnProbability: 10
+  - carPrefab: {fileID: 2252296976030854207, guid: e0ebd8e4b3bdb054c9c4357758f3c55a, type: 3}
+    spawnProbability: 3
+  - carPrefab: {fileID: 207712125500552254, guid: b114b8d24c8487d4face2d4d67fdbb66, type: 3}
+    spawnProbability: 7
+  - carPrefab: {fileID: 709385970848430609, guid: 208148a64b26ead429c28298b662a4f5, type: 3}
+    spawnProbability: 7
+  - carPrefab: {fileID: 8634451447970412623, guid: b322565c7af601241b4fbf6b26ca8fe1, type: 3}
+    spawnProbability: 7
+  - carPrefab: {fileID: 6001071003197931631, guid: 77529227da8c9914b82949870fef5f73, type: 3}
+    spawnProbability: 7
+  spawnInterval: 3
