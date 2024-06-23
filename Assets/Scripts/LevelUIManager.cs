@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class LevelUIManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject winMenu;
     public GameObject gameOverMenu;
 
     private void Start()
     {
         pauseMenu.SetActive(false);
+        winMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void OnPauseButtonPressed()
@@ -35,6 +38,23 @@ public class LevelUIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void OnHomePressed()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OnWin()
+    {
+        winMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void OnGameOver()
+    {
+        gameOverMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     public void OnNextLevelPressed()
     {
         LoadNextLevel();
@@ -52,10 +72,10 @@ public class LevelUIManager : MonoBehaviour
         int nextLevelIndex = currentLevelIndex + 1;
         if (nextLevelIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene(nextLevelIndex);
             Time.timeScale = 1f;
-            SceneManager.LoadScene(currentLevelIndex);
+            //SceneManager.LoadScene(currentLevelIndex);
         }
         else
         {
@@ -64,16 +84,14 @@ public class LevelUIManager : MonoBehaviour
         }
     }
 
+
+
     private void PauseGame()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
 
-    public void OnGameOver()
-    {
-        gameOverMenu.SetActive(true);
-        Time.timeScale = 0f;
-    }
+
 
 }
