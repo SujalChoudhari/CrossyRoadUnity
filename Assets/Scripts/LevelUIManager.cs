@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class LevelUIManager : MonoBehaviour
@@ -9,6 +10,9 @@ public class LevelUIManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject winMenu;
     public GameObject gameOverMenu;
+
+    public TextMeshProUGUI coinsText;
+    public TextMeshProUGUI levelDeathCountText;
 
     private void Start()
     {
